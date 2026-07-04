@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elegant Stopwatch</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<header>
+
+<h1>
+<i class="fa-solid fa-stopwatch"></i>
+Elegant Stopwatch
+</h1>
+
+<div class="top-right">
+
+<button id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+</header>
+
+<div class="clock-area">
+
+<div id="date"></div>
+
+<div id="liveClock"></div>
+
+</div>
+
+<div class="stopwatch-card">
+
+<div class="circle">
+
+<div class="outer-circle">
+
+<div class="inner-circle">
+
+<h2 id="display">
+00:00:00.000
+</h2>
+
+<p>
+Hours : Minutes : Seconds
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button id="startBtn" class="start">
+<i class="fa-solid fa-play"></i>
+Start
+</button>
+
+<button id="pauseBtn" class="pause">
+<i class="fa-solid fa-pause"></i>
+Pause
+</button>
+
+<button id="lapBtn" class="lap">
+<i class="fa-solid fa-flag-checkered"></i>
+Lap
+</button>
+
+<button id="resetBtn" class="reset">
+<i class="fa-solid fa-rotate-left"></i>
+Reset
+</button>
+
+</div>
+
+</div>
+
+<section class="stats">
+
+<div class="card">
+
+<h3>Total Time</h3>
+
+<p id="totalTime">
+00:00:00
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Laps</h3>
+
+<p id="lapCount">
+0
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Fastest Lap</h3>
+
+<p id="fastestLap">
+--
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Slowest Lap</h3>
+
+<p id="slowestLap">
+--
+</p>
+
+</div>
+
+</section>
+
+<section class="laps">
+
+<div class="lap-header">
+
+<h2>
+
+<i class="fa-solid fa-list"></i>
+
+Lap History
+
+</h2>
+
+<div>
+
+<button id="copyBtn">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy
+
+</button>
+
+<button id="exportBtn">
+
+<i class="fa-solid fa-file-export"></i>
+
+Export
+
+</button>
+
+<button id="clearBtn">
+
+<i class="fa-solid fa-trash"></i>
+
+Clear
+
+</button>
+
+</div>
+
+</div>
+
+<ul id="lapList">
+
+<li class="empty">
+
+No laps recorded yet
+
+</li>
+
+</ul>
+
+</section>
+
+<footer>
+
+<div>
+
+<i class="fa-solid fa-keyboard"></i>
+
+Space = Start/Pause
+
+</div>
+
+<div>
+
+L = Lap
+
+</div>
+
+<div>
+
+R = Reset
+
+</div>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
